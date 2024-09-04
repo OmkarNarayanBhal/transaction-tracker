@@ -33,13 +33,13 @@ const SignIn = ({ onSignIn }) => {
             <h2>Sign In👇</h2>
             <input
                 type="text"
-                placeholder="Username"
+                placeholder="omkar"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
             />
             <input className='ps'
                 type="password"
-                placeholder="Password"
+                placeholder="omkar1234"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
             />

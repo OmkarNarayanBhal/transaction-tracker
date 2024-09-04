@@ -1,0 +1,164 @@
+/* TransactionTracker.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-color: #00cec9;
+    --accent-color: #fd79a8;
+    --background-color: #dfe6e9;
+    --text-color: #2d3436;
+    --error-color: #d63031;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width:  100vh;
+    color: var(--text-color);
+  }
+  
+  .container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(31, 38, 135, 0.3);
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    margin: 0 0 24px 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"], 
+  input[type="password"]{
+    width: 90%;
+    padding: 14px 18px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="number"]::placeholder,
+  input[type="date"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="date"]:focus {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(-2px);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+  }
+  
+  li button {
+    background-color: var(--error-color);
+    padding: 1px 1px;
+    margin: 0;
+    border-radius: 8px;
+    font-size: 13px;
+    width: 25%;
+  }
+  
+  li button:hover {
+    background-color: #ff4757;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    button {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

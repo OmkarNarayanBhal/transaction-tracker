@@ -23,6 +23,8 @@ A full-stack daily allowance/transaction tracker app built using the PERN stack 
   - dotenv (for managing environment variables)
   - cors (for enabling CORS with various options)
   - body-parser (for parsing incoming request bodies in JSON format)
+ 
+ ## Demo viedos - https://drive.google.com/drive/folders/1XZe1JNuSuHigPEqxpWSgJ0Cg0FhVrXxT?usp=share_link
 
 ## Getting Started
 
